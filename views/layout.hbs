@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {{!-- Metadata --}}
+  <title>{{title}}</title>
+  <meta name="description"
+    content="An open API designed to provide an easy access to general information about the world's countries.">
+  <meta name="keywords" content="countries, continents, languages, api, list">
+  <meta name="author" content="d98c_sw">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="follow">
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+  {{!-- Styles --}}
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/contact.css' />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary p-3">
+    <div class="container">
+      <div class="div d-flex flex-row align-items-center">
+        <a class="navbar-brand" href="https://github.com/danny1998cuba" target="_blank">
+          <img src="/images/logo.svg" alt="logo" width="100">
+        </a>
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="/contact">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+
+      <a class="btn btn-outline-success me-2 px-4 py-2" type="button" href="/docs">API Docs</a>
+    </div>
+  </nav>
+  {{{body}}}
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <p class="col-md-4 mb-0 text-muted">
+        <img src="/images/favicon.ico" alt="" width="30" class="mx-2">
+        ©
+        <span id="year"></span> - <span>d98c_sw</span>
+      </p>
+
+      <a href="/"
+        class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+
+      </a>
+
+      <ul class="nav col-md-4 justify-content-end">
+        <li class="nav-item"><a href="/" class="nav-link px-2 text-muted">Home</a></li>
+        <li class="nav-item"><a href="/docs" class="nav-link px-2 text-muted">Docs</a></li>
+        <li class="nav-item"><a href="/about" class="nav-link px-2 text-muted">About</a></li>
+        <li class="nav-item"><a href="/contact" class="nav-link px-2 text-muted">Contact</a></li>
+      </ul>
+    </footer>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="/javascripts/contact.js"></script>
+
+  <script>
+    document.getElementById('year').innerHTML = new Date().getFullYear()
+  </script>
+
+</body>
+
+</html>
