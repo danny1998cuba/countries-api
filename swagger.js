@@ -19,7 +19,7 @@ const swaggerSpec = swaggerJsdoc(options)
 const swaggerDocs = (app, port) => {
     app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerSpec, {
         customSiteTitle: "List of countries API | Docs",
-        // customCss: '.swagger-ui .topbar { display: none }',
+        customCssUrl: '/stylesheets/swagger-ui.min.css',
         customfavIcon: '/images/favicon.ico',
         customJs: '/javascripts/swagger-header.js'
     }))

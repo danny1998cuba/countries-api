@@ -69,17 +69,13 @@ function createFooter() {
 
 window.addEventListener('load', () => {
   const bootstrap = document.createElement('link')
-  bootstrap.href = `https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css`
+  bootstrap.href = `/stylesheets/bootstrap.min.css`
   bootstrap.rel = 'stylesheet'
-  bootstrap.integrity = 'sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD'
-  bootstrap.crossOrigin = 'anonymous'
   document.head.appendChild(bootstrap)
 
-  const bootstrap_script = document.createElement('script')
-  bootstrap_script.src = 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js'
-  bootstrap_script.integrity = 'sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN'
-  bootstrap_script.crossOrigin = 'anonymous'
-  document.body.appendChild(bootstrap_script)
+  // const bootstrap_script = document.createElement('script')
+  // bootstrap_script.src = '/javascripts/bootstrap.bundle.min.js'
+  // document.body.appendChild(bootstrap_script)
 
   createHeader()
   container()
